@@ -1,0 +1,70 @@
+<!doctype html>
+
+<head>
+    <title>webpage</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        #first {
+            padding: 1% 10% 10%;
+            margin: 2% 4% 3% 4%;
+            height: 500%;
+            background-color: white;
+            text-align: center;
+            width: 70%;
+        }
+
+        label {
+            padding: 2%;
+        }
+
+        input {
+            margin: 1%;
+        }
+
+        #hear-choice {
+            height: 90px;
+            margin-left: 65%;
+            width: 150px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Survey Form</h1>
+    <div id="first">
+        <form id="form">
+            <h3 style="text-align:center">let us know how can we improve our website</h3>
+            <label for="name">*Name : </label>
+            <input id="name" type="text" placeholder="enter the name"><br>
+            <label for="email">*Email : </label>
+            <input id="email" placeholder="enter the email" type="email"><br>
+            <label for="age">*age : </label>
+            <input id="age " type="number" placeholder="enter the age"><br>
+            <label for="occupation">which option bext describe your current occupation?</label>
+            <select id="occupation">
+                <option value="Full Time">Full Time</option>
+                <option value="Part time">Part time</option>
+                <option value="student">Student</option>
+            </select><br>
+            <label for="website">where dil you first hear about our website?</label>
+            <div id="hear-choice">
+                <input type="radio" value="search engine" id="website" name="hear">search engine<br>
+                <input type="radio" value="facebook" id="website" name="hear">facebook<br>
+                <input type="radio" value="word of mouth" id="website" name="hear">word of mouth<br>
+                <input type="radio" value="other" id="website" name="hear">other<br>
+            </div>
+            <label for="before_buying">What other options were you concidering before buyingfrom us</label>
+            <select id="before_buying">
+                <option value="1">option 1</option>
+                <option value="2">option 2</option>
+                <option value="3">option 3</option>
+            </select><br>
+            <label for="imp">things that should be improved in the future</label>
+            <input type="checkbox" value="load speed" name="imp">load speed<br>
+        </form>
+    </div>
+</body>
